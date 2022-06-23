@@ -58,11 +58,6 @@ module.exports = {
       '@redwoodjs/testing/web'
     ),
     '~__REDWOOD__USER_ROUTES_FOR_MOCK': rwjsPaths.web.routes,
-    /**
-     * Mock out files that aren't particularly useful in tests. See fileMock.js for more info.
-     */
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|css)$':
-      '@redwoodjs/testing/dist/web/fileMock.js',
   },
   transform: {
     '\\.[jt]sx?$': [
@@ -73,5 +68,9 @@ module.exports = {
         configFile: path.resolve(__dirname, './webBabelConfig.js'),
       },
     ],
+    // TODO: Handle SVG in jest-preview core
+    '^.+\\.(css|scss|sass)$': 'jest-preview/transforms/css',
+    '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)':
+      'jest-preview/transforms/file',
   },
 }

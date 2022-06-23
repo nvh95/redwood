@@ -53,6 +53,7 @@
     "babel-plugin-inline-react-svg": "2.0.1",
     "core-js": "3.23.2",
     "jest": "27.5.1",
+    "jest-preview": "0.2.5",
     "jest-watch-typeahead": "1.1.0",
     "msw": "0.40.2",
     "ts-toolbelt": "9.6.0",
