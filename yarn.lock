@@ -6455,6 +6455,7 @@ __metadata:
     babel-plugin-inline-react-svg: 2.0.1
     core-js: 3.23.2
     jest: 27.5.1
+    jest-preview: 0.2.5
     jest-watch-typeahead: 1.1.0
     msw: 0.40.2
     ts-toolbelt: 9.6.0
@@ -12642,6 +12643,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^9.2.0":
+  version: 9.3.0
+  resolution: "commander@npm:9.3.0"
+  checksum: 4cf2f3a75358e620c3bfb515c5306b3be083463c752504788266a7ff0ed862c0fe3bf7f700154b50546c5c3eca0195f9ca99020184ff6f6128ae7ea87f24b5ba
+  languageName: node
+  linkType: hard
+
 "common-path-prefix@npm:^3.0.0":
   version: 3.0.0
   resolution: "common-path-prefix@npm:3.0.0"
@@ -12808,6 +12816,18 @@ __metadata:
   version: 1.6.0
   resolution: "connect-history-api-fallback@npm:1.6.0"
   checksum: 6d59c68070fcb2f6d981992f88d050d7544e8e1af6600c23ad680d955e316216794a742a1669d1f14ed5171fc628b916f8a4e15c5a1e55bffc8ccc60bfeb0b2c
+  languageName: node
+  linkType: hard
+
+"connect@npm:^3.7.0":
+  version: 3.7.0
+  resolution: "connect@npm:3.7.0"
+  dependencies:
+    debug: 2.6.9
+    finalhandler: 1.1.2
+    parseurl: ~1.3.3
+    utils-merge: 1.0.1
+  checksum: f120c6116bb16a0a7d2703c0b4a0cd7ed787dc5ec91978097bf62aa967289020a9f41a9cd3c3276a7b92aaa36f382d2cd35fed7138fd466a55c8e9fdbed11ca8
   languageName: node
   linkType: hard
 
@@ -16415,7 +16435,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"finalhandler@npm:~1.1.2":
+"finalhandler@npm:1.1.2, finalhandler@npm:~1.1.2":
   version: 1.1.2
   resolution: "finalhandler@npm:1.1.2"
   dependencies:
@@ -16471,6 +16491,16 @@ __metadata:
     safe-regex2: ^2.0.0
     semver-store: ^0.3.0
   checksum: 3e56f50befde96d4b0a0a8118bd7fe283184e54ed61ac359ce62e7229229ab8b4a5aebe02edfcc126f0b6eef38660b59347293d61752bc845aae823cace8042a
+  languageName: node
+  linkType: hard
+
+"find-node-modules@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "find-node-modules@npm:2.1.3"
+  dependencies:
+    findup-sync: ^4.0.0
+    merge: ^2.1.1
+  checksum: 61fd8300635f6b6237985f05ef9ba01dbd29482c625c8c34a321fe5e9e69a48f4ab9e03c3026cd22eb2b6618d01309b515a7cf73dd886fc2cf099f2e4ecaf598
   languageName: node
   linkType: hard
 
@@ -16531,6 +16561,18 @@ __metadata:
     micromatch: ^4.0.4
     resolve-dir: ^1.0.1
   checksum: bbdb8af8c86a0bde4445e2f738003b92e4cd2a4539a5b45199d0252f2f504aeaf19aeca1fac776c3632c60657b2659151e72c8ead29a79617459a57419a0920b
+  languageName: node
+  linkType: hard
+
+"findup-sync@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "findup-sync@npm:4.0.0"
+  dependencies:
+    detect-file: ^1.0.0
+    is-glob: ^4.0.0
+    micromatch: ^4.0.2
+    resolve-dir: ^1.0.1
+  checksum: 3e7de4d0afda35ecdd6260ce9d31524161817466ad6218b092dc73554848ce9618b69ec0f841dc82e320a4b3bfaba19c71c154f5b249ffed28143ba95a743d37
   languageName: node
   linkType: hard
 
@@ -20040,6 +20082,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-preview@npm:0.2.5":
+  version: 0.2.5
+  resolution: "jest-preview@npm:0.2.5"
+  dependencies:
+    camelcase: ^6.3.0
+    chalk: ^4.1.2
+    chokidar: ^3.5.3
+    commander: ^9.2.0
+    connect: ^3.7.0
+    find-node-modules: ^2.1.3
+    open: ^8.4.0
+    sirv: ^2.0.2
+    slash: ^3.0.0
+    string-hash: ^1.1.3
+    update-notifier: ^5.1.0
+    ws: ^8.5.0
+  bin:
+    jest-preview: cli/index.js
+  checksum: e234ffacebabd26daf1514cb4b2f0e9f37242c51ae3a825cdfb4465bf77d89ee0e71efd1b35c35417d1b0db07054609075daf5d35dca5965616ff8f442836749
+  languageName: node
+  linkType: hard
+
 "jest-regex-util@npm:^26.0.0":
   version: 26.0.0
   resolution: "jest-regex-util@npm:26.0.0"
@@ -22154,6 +22218,13 @@ __metadata:
   version: 1.4.1
   resolution: "merge2@npm:1.4.1"
   checksum: 254a8a4605b58f450308fc474c82ac9a094848081bf4c06778200207820e5193726dc563a0d2c16468810516a5c97d9d3ea0ca6585d23c58ccfff2403e8dbbeb
+  languageName: node
+  linkType: hard
+
+"merge@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "merge@npm:2.1.1"
+  checksum: 9e722a88f661fb4d32bfbab37dcc10c2057d3e3ec7bda5325a13cbfb82a59916963ec99374cca7f5bd3ff8c65a6ffbd9e1061bc0c45c6e3bf211c78af659cb44
   languageName: node
   linkType: hard
 
@@ -27721,6 +27792,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sirv@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "sirv@npm:2.0.2"
+  dependencies:
+    "@polka/url": ^1.0.0-next.20
+    mrmime: ^1.0.0
+    totalist: ^3.0.0
+  checksum: eb700ec65dc793e6b06e5f48b25071d93c251676253388886c7c9dacbcb2aa29e0d7b5c5566b5250f90e60d30ff775bb852e9e1ed1b2ba53a0b57b21b8ffc1db
+  languageName: node
+  linkType: hard
+
 "sisteransi@npm:^1.0.5":
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
@@ -28408,6 +28490,13 @@ __metadata:
   version: 1.0.1
   resolution: "string-env-interpolation@npm:1.0.1"
   checksum: 410046e621e71678e71816377d799b40ba88d236708c0ad015114137fa3575f1b3cf14bfd63ec5eaa35ea43ac582308e60a8e1a3839a10f475b8db73470105bc
+  languageName: node
+  linkType: hard
+
+"string-hash@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "string-hash@npm:1.1.3"
+  checksum: 179725d7706b49fbbc0a4901703a2d8abec244140879afd5a17908497e586a6b07d738f6775450aefd9f8dd729e4a0abd073fbc6fa3bd020b7a1d2369614af88
   languageName: node
   linkType: hard
 
@@ -29478,6 +29567,13 @@ __metadata:
   version: 1.1.0
   resolution: "totalist@npm:1.1.0"
   checksum: 2adbd4501c8290c2a96617a83dc67dfdd02bcbd360032017e27ccf27bbb09649bbe8dad1c45d97be6874281178aca5b3f62ed059d1eeda77c479cfb8eb3a9266
+  languageName: node
+  linkType: hard
+
+"totalist@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "totalist@npm:3.0.0"
+  checksum: 025cc7e87f2e990d6aec29282c0e04ef526ad6d631b3c084df5ca5a34a9dbcb8fe69ed63a45da3a74192645aad8a12e0bc6ba8a0a9915d16789e9ecc84c3b220
   languageName: node
   linkType: hard
 
@@ -31570,6 +31666,21 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: f856382d94dfa8d722337d79117fe4f16d48ef7d7f77a58e94af7d7f32e863fce8403c00992ddddbf1efd5a334c581c2a987aea66255f7ee368680e59f78ae15
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.5.0":
+  version: 8.8.0
+  resolution: "ws@npm:8.8.0"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ^5.0.2
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: c7843c2321cba2c7e234bca2d0fa9babb7ff6c4bcf131423f2af50577b6f80b3ee862296de79efb9116b46834b19ca78e8292c75eeef7000fc02ff8a9a57948f
   languageName: node
   linkType: hard
 
